@@ -41,12 +41,15 @@ export default function FormOrder() {
     // ___________________________________________________________________________________________________________________
 
     return (
-        <div className="min-h-screen flex flex-col items-center justify-center bg-white p-4">
+<div className="min-h-screen flex flex-col items-center justify-center bg-white p-4">
 
     <>
-        <div className="flex items-center mb-4">
-            <img src="/images/banner1.jpg" alt="Logo" width="350" height="auto" />
-            <div className="flex flex-col items-center ml-4">
+    <div className="flex flex-col items-center mb-4 md:flex-row md:items-center">
+            {/* Imagen */}
+            <img src="/images/banner1.jpg" alt="Logo" width="350" height="auto" className="md:order-2" />
+
+            {/* Formulario */}
+            <div className="flex flex-col items-center md:ml-4">
                 <p className="text-lg text-black">Consulta tu envío</p>
                 <input
                     type="text"
